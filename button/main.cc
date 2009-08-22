@@ -1,5 +1,4 @@
 #include <QApplication>
-#include "clickhandler.h"
 #include "window.h"
 
 int main(int argc, char **argv)

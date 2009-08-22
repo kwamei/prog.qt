@@ -2,7 +2,6 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include "window.h"
-#include "clickhandler.h"
 
 Window::Window(QWidget *parent) : QWidget(parent)
 {
