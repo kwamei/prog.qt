@@ -1,3 +1,4 @@
+#include <iostream>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include "window.h"
@@ -10,8 +11,12 @@ Window::Window(QWidget *parent) : QWidget(parent)
     QVBoxLayout *layout = new QVBoxLayout;
     setLayout(layout);
 
-    ClickHandler *handler = new ClickHandler;
     button = new QPushButton(QString("Click me!"));
-    QObject::connect(button, SIGNAL(clicked()), handler, SLOT(message()));
+    QObject::connect(button, SIGNAL(clicked()), this, SLOT(message()));
     layout->addWidget(button);
+}
+
+void Window::message()
+{
+    std::cout << "Button was clicked!" << std::endl;
 }

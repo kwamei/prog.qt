@@ -8,5 +8,5 @@ DEPENDPATH += .
 INCLUDEPATH += .
 
 # Input
-HEADERS += clickhandler.h window.h
-SOURCES += clickhandler.cc main.cc window.cc
+HEADERS += window.h
+SOURCES += main.cc window.cc
