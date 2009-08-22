@@ -1,0 +1,4 @@
+.*.swp
+*.o
+moc_*
+Makefile
