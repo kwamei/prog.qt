@@ -1,7 +1,6 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-//#include <QPushButton>
 #include <QWidget>
 
 class QPushButton;
