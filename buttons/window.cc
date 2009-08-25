@@ -4,14 +4,14 @@
 #include <QVBoxLayout>
 #include "window.h"
 
-Window::Window(QWidget *parent) : QWidget(parent)
+Window::Window(int count, QWidget *parent) : QWidget(parent)
 {
     setWindowTitle("Buttons");
 
     QVBoxLayout *layout = new QVBoxLayout;
     setLayout(layout);
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < count; ++i) {
 	QPushButton *button = new QPushButton("Button " + 
 		QString::number(i+1));
 	QObject::connect(button, SIGNAL(clicked()), this, SLOT(message()));

@@ -10,7 +10,7 @@ class Window : public QWidget
     Q_OBJECT
 
     public:
-	Window(QWidget *parent=0);
+	Window(int count=5, QWidget *parent=0);
 
     private:
 	QLabel *label;
