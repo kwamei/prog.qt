@@ -5,4 +5,4 @@
 TEMPLATE = subdirs
 
 # Directories
-SUBDIRS += button buttons quitbutton
+SUBDIRS += button buttons hello quitbutton
