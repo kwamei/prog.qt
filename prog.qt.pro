@@ -5,4 +5,4 @@
 TEMPLATE = subdirs
 
 # Directories
-SUBDIRS += button buttons hello lineedit quitbutton
+SUBDIRS += button buttons hello lineedit quitbutton vplayer
